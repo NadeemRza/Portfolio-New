@@ -1,0 +1,113 @@
+@import "../../app.scss";
+
+.contact {
+    height: 100%;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    @include mobile {
+        width: 100%;
+        padding: 0.63rem;
+        flex-direction: column;
+    }
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        @include mobile {
+            gap: 1.17rem;
+            text-align: center;
+            align-items: center;
+            margin-top: 3.5rem;
+        }
+
+        h2 {
+            font-size: 6.25rem;
+            line-height: 5.5rem;
+
+            @include mobile {
+                font-size: 2.25rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.55rem;
+        }
+
+        a {
+            font-weight: 300;
+        }
+    }
+
+    .formContainer {
+        flex: 1;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+            padding: 0 3.1rem;
+        }
+
+        .phoneSvg {
+            stroke: #ffa500;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            svg {
+                @include mobile {
+                    width: 100% !important;
+                    height: 100% !important;
+                    padding: 0 0.75rem;
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            input,
+            textarea {
+                padding: 1.25rem;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 0.3rem;
+
+                @include mobile {
+                    padding: 0.55rem;
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            button {
+                padding: 1.25rem;
+                border: none;
+                background-color: #ffa500;
+                cursor: pointer;
+                border-radius: 0.3rem;
+                font-weight: 500;
+
+                @include mobile {
+                    padding: 0.6rem;
+                }
+            }
+
+            button:hover {
+                background-color: #7c507c;
+                color: #fff;
+            }
+        }
+    }
+}
