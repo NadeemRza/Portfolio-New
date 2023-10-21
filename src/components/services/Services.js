@@ -62,7 +62,7 @@ const Services = () => {
                 <b>For Your</b> Business.
               </h2>
               <button className="services_title_container_title_button">
-                WHAT WE DO?
+                WHAT I DO?
               </button>
             </div>
           </div>
