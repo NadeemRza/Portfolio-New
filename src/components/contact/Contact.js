@@ -156,7 +156,7 @@ const Contact = () => {
             }}
           >
             {error && "! Something went wrong"}
-            {success && "$ Message was sent sucessfully"}
+            {success && "Message was sent sucessfully"}
           </div>
         </motion.form>
       </motion.div>
